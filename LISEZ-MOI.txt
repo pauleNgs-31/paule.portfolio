@@ -1,0 +1,169 @@
+PORTFOLIO DE PAULE NGATSIÉ — 22 NOVEMBRE 2026
+
+SITE EN FRANÇAIS ET EN ANGLAIS
+Le sélecteur FR / EN est visible dans l’en-tête, y compris sur téléphone et tablette.
+index.html et Accueil.html : français ; en.html : anglais.
+Le changement de langue conserve la rubrique courante.
+Les textes, boutons, détails des projets et descriptions des images sont traduits.
+Les compteurs et le kilométrage s’adaptent à la langue. Le CV PDF reste en français,
+ce qui est indiqué sur les liens de téléchargement de la version anglaise.
+Pour actualiser l’anglais : compléter translations/en.json, puis lancer
+python3 scripts/build-language.py après avoir mis à jour le français.
+Les mentions sous les loisirs et sous le tableau de bord sont supprimées.
+Le bloc des niveaux de langue est supprimé ; le sélecteur FR / EN reste disponible.
+
+OUVRIR ET MODIFIER
+Extraire toute l’archive, puis ouvrir index.html ou Accueil.html.
+Conserver les fichiers HTML, les styles, les scripts et le dossier assets ensemble.
+Textes : index.html ; style général : portofolio.css ; accueil et vidéo : media.css.
+Illustrations : project-illustrations.css et project-illustrations.js.
+Combiné automobile : dashboard-cluster.css.
+Navigation et filtres : portfolio.js.
+Après une modification de index.html, recopier le fichier dans Accueil.html.
+
+PLATEFORME SCADA ET FORMATION
+La fiche SCADA indique explicitement : « J’ai mis en place une plateforme de test ».
+L’intitulé Bachelor universitaire de technologie est écrit en toutes lettres dans les
+projets concernés et la rubrique formation.
+
+ROBOT MOBILE À DEUX ROUES
+Modèle confirmé : ELEGOO Tumbller. Projet programmé en langage C sur plateforme Arduino.
+Régulation PID, acquisition des capteurs, détection d’obstacles et communication Wi-Fi
+entre robots par liaison série.
+Capteurs documentés du kit : centrale inertielle MPU6050 (accéléromètre et gyroscope),
+capteur à ultrasons à l’avant, infrarouges latéraux et capteurs à effet Hall pour la vitesse.
+Le MPU6050 communique sur bus I²C : SDA pour les données et SCL pour l’horloge.
+La référence du module Wi-Fi et celle des capteurs supplémentaires ajoutés restent
+à identifier ; aucun modèle supplémentaire n’est attribué au projet.
+La photographie fournie est conservée sans retouche sous assets/robot-mobile-pid.jpg.
+Documentation officielle :
+https://www.elegoo.com/blogs/arduino-projects/elegoo-tumbller-self-balancing-robot-car-tutorial
+Manuel constructeur reproduit ici : https://device.report/manual/2614807
+
+TABLEAU DE BORD ACTUALISÉ
+Le tableau de bord est placé directement sous la plateforme d’essais SCADA.
+La sélection contient six projets.
+Style automobile inspiré de la référence : fond noir, contour métallique, deux grands
+cadrans circulaires gradués, voiture bleue et route animée en perspective au centre.
+Indicateurs de conduite D et READY. Carte du projet élargie pour une meilleure lisibilité.
+Deux jauges : vitesse (km/h) et niveau de batterie (%).
+Clignotants verts gauche et droit, avec un bouton rouge de warnings.
+Les trois commandes sont interactives. Les warnings font clignoter simultanément
+les deux flèches ; choisir gauche ou droite active uniquement le côté correspondant.
+Le kilométrage est centré en bas du combiné et évolue avec la vitesse de démonstration.
+Les valeurs sont fictives. Les animations et les valeurs évoluent automatiquement, sans bouton de pause.
+
+AUTRES MÉDIAS
+Photographies de routeur Cisco, de serveurs Dell et de RTU, avec animations des échanges.
+Illustrations animées d’acquisition de données et de réseau IoT.
+Photos des circuits et des robots ouvrables en grand.
+La photo EDF et la vidéo de fond de 20 secondes sont conservées dans l’accueil.
+
+EN DEHORS DES PROJETS
+Les descriptions sont désormais de courts récits à la première personne, avec
+les durées précisées par Paule : deux ans de fitness, quatre mois de course à pied
+et un mois d’échecs. La traduction anglaise est actualisée en parallèle.
+Les photos sont désormais plus compactes : 230 px de hauteur sur grand écran,
+200 px sur tablette et 190 px sur téléphone. Une courte description accompagne
+chaque activité, en français et en anglais. Les images restent ouvrables en grand.
+La carte Musculation utilise la photographie personnelle de Paule à la salle
+(IMG_1612.jpeg), sans visage visible. La carte Course à pied montre uniquement les jambes et les baskets d’une coureuse vue de dos
+sur une promenade côtière, sans haut du corps ni visage visible ; la carte Échecs conserve son échiquier en bois.
+Les illustrations de course et d’échecs conservent leur esthétique Pinterest.
+La photo de musculation est utilisée sans retouche de contenu ; le cadrage compact
+est réalisé uniquement à l’affichage. La version complète s’ouvre en grand. Les deux
+autres images sont générées et n’utilisent pas les photographies personnelles de Paule.
+Les anciens portraits de cette galerie ont été retirés du dossier distribué.
+Images ouvrables en grand, chargées à la demande et optimisées en WebP.
+Styles : interests-gallery.css ; médias : assets/interests/paule-salle.webp et assets/interests/course-promenade.webp et assets/interests/loisir-echecs.webp.
+Consignes et provenance : ILLUSTRATIONS_LOISIRS.md.
+
+AFFICHAGE ÉPURÉ
+Le portrait d’accueil n’a plus de texte superposé ni de légende.
+Les commandes de pause vidéo et animations ont été retirées ; la vidéo est en boucle
+et les animations restent actives quand les projets sont visibles.
+Les préférences système de réduction des mouvements sont conservées.
+Les mentions Principe animé, Aperçu animé, Topologie animée et les deux légendes
+Communication de principe / Simulation réseau ont été supprimées de l’affichage.
+Le bloc dépliable de crédits photographiques et la commande de copie d’e-mail sont retirés.
+La localisation du contact est désormais « Paris, France ».
+
+CRÉDITS CONSERVÉS DANS LES FICHIERS
+Les matériels sont représentatifs. Les photographies d’équipements proviennent de
+Wikimedia Commons. Les attributions et licences figurent dans LICENCES_ILLUSTRATIONS.md
+et assets/equipment/credits.json. Conserver ces crédits lors de la redistribution.
+Les photos de Paule et de ses réalisations proviennent de ses fichiers.
+
+CV
+Le portfolio accompagne le CV joint aux candidatures : aucun lien de téléchargement
+du CV n’est affiché dans les pages.
+
+VÉRIFICATIONS
+Photo du robot chargée en entier sur ordinateur et dans des cadres mobiles de 390 et
+320 pixels ; liens locaux, ordre des six projets et cohérence du descriptif contrôlés.
+Syntaxe JavaScript et liens locaux ; commandes de clignotants et warnings ; deux jauges ;
+centrage du kilométrage ; évolution automatique des valeurs ; affichage sur ordinateur et dans des cadres
+mobiles de 390 et 320 pixels, sans débordement horizontal.
+
+LECTURE ET NAVIGATION
+La taille des textes est légèrement augmentée, avec des dates et des informations
+de formation plus lisibles. Le menu contient un lien direct Loisirs / Hobbies
+vers les trois activités, également disponible dans le menu du téléphone.
+
+PORTRAIT ET NOM À L’ACCUEIL
+Le portrait utilise un cadre ovale,
+sur ordinateur et téléphone. Le point final après Ngatsié est supprimé dans
+les grands titres français et anglais.
+
+ÉTIQUETTES DES PROJETS
+Les photographies du circuit et du robot portent les libellés PCB électronique
+et Robot mobile ; en anglais : Electronic PCB et Mobile robot.
+
+PIED DE PAGE
+La mention « Tous droits réservés. » est ajoutée au pied de page en français,
+et « All rights reserved. » dans la version anglaise.
+
+CARTES PCB ET ROBOT
+Les photos des deux cartes ont la même hauteur. Les liens En savoir plus sont
+alignés en bas, avec le même espacement sous chaque accordéon, en français
+et en anglais. Affichage et ouverture des détails vérifiés sur ordinateur et téléphone.
+
+EXPÉRIENCES RACONTÉES
+La rubrique Expériences adopte une présentation narrative : premières réalisations
+chez PRST Group et vision d’ensemble chez EDF. Les deux récits personnels remplacent
+la liste de missions et racontent la progression du parcours. La version anglaise est actualisée.
+Les styles sont regroupés dans experience-story.css.
+
+MARGES ET SIMPLIFICATION
+Le bloc Le fil conducteur et son lien ont été retirés dans les deux langues.
+La largeur commune du site a été augmentée pour rapprocher le contenu du bord
+gauche sur les grands écrans, avec un alignement cohérent entre les sections.
+Les marges sur téléphone sont adaptées à la largeur disponible.
+
+LOGOS DES ENTREPRISES
+Les logos de PRST Group et EDF sont affichés en miniature près du nom des entreprises
+dans la rubrique Expériences. Les fichiers SVG sont locaux ; leurs sources officielles
+figurent dans assets/companies/SOURCES.md. Affichage vérifié sur ordinateur et téléphone.
+
+RÉCITS PERSONNELS
+Les textes de PRST Group et EDF racontent le parcours en apprentissage, les
+apprentissages techniques et l’accompagnement des équipes. Le Bachelor universitaire
+de technologie chez PRST Group et l’année et demie chez EDF reprennent les précisions
+de Paule. La version anglaise est actualisée.
+
+INTRODUCTION DES PROJETS
+La phrase de présentation située à côté du titre des projets a été retirée
+dans les deux langues.
+
+PORTRAIT ET PRÉSENTATION
+Le portrait ovale est légèrement agrandi sur ordinateur, jusqu’à 480 × 580 px
+selon la largeur disponible. L’introduction au-dessus des deux récits d’expérience
+est retirée dans les deux langues. Les liens de téléchargement du CV à l’accueil
+et dans le contact sont supprimés.
+
+FORMATION
+La police de la section Formation est légèrement agrandie dans les deux langues,
+pour les titres, spécialités, établissements, dates et précisions de parcours.
+
+EXPÉRIENCE EDF
+La phrase finale sur l’accompagnement des collègues est retirée dans les deux langues.

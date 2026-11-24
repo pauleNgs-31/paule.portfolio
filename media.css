@@ -1,0 +1,91 @@
+/* Médias de l’accueil : extrait court et portrait fourni par Paule. */
+.hero-stage {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #0a1527 url("assets/electricite-poster.jpg") center / cover no-repeat;
+}
+
+.hero-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+}
+
+.hero-video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-stage::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(7, 17, 33, .94), rgba(7, 17, 33, .79) 48%, rgba(7, 17, 33, .48)),
+    linear-gradient(0deg, #0a1527, transparent 28%, transparent 85%, rgba(10, 21, 39, .2));
+}
+
+.hero-stage .hero-description {
+  color: #c1cde0;
+}
+
+/* Le cadrage conserve le casque et le visage sur tous les écrans. */
+.hero-figure .portrait {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 34%;
+}
+
+.hero-figure .portrait-frame {
+  border-radius: 50%;
+  max-width: 420px;
+  margin-inline: auto;
+  border-color: rgba(183, 214, 255, .24);
+  box-shadow: 0 18px 54px rgba(0, 0, 0, .22);
+}
+
+/* Le portrait occupe davantage l’espace disponible sur ordinateur. */
+@media (min-width: 901px) {
+  .hero-figure .portrait-frame {
+    max-width: 480px;
+    height: clamp(450px, 42.5vw, 580px);
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-stage::after {
+    background:
+      linear-gradient(180deg, rgba(7, 17, 33, .87), rgba(7, 17, 33, .76) 48%, rgba(7, 17, 33, .65)),
+      linear-gradient(0deg, #0a1527, transparent 20%);
+  }
+
+  .hero-figure .portrait {
+    object-position: 50% 32%;
+  }
+}
+
+@media print {
+  .hero-stage {
+    background: none;
+  }
+
+  .hero-backdrop,
+  .hero-stage::after {
+    display: none !important;
+  }
+
+  .hero-stage .hero-description {
+    color: #3c4e69;
+  }
+}

@@ -1,0 +1,15 @@
+/* Illustrations personnelles des activités hors projets. */
+.interests.interests-gallery{display:block;padding-top:34px}
+.interests-gallery>h3{font:400 2rem/1.25 var(--serif);letter-spacing:-.025em;color:var(--text);margin:0 0 26px}
+.interests-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.interest-card{margin:0;min-width:0;overflow:hidden;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+.interest-card>a{display:block;overflow:hidden;outline-offset:-4px;background:#14263b}
+.interest-card img{display:block;width:100%;height:230px;object-fit:cover;object-position:50% 65%}
+.interest-card img.gym-session-photo{object-position:50% 30%}
+.interest-card figcaption{padding:20px;color:var(--text)}
+.interest-card h4{margin:0;font:500 1.0625rem/1.4 Arial,sans-serif}
+.interest-card figcaption p{margin:10px 0 0;font:400 1rem/1.65 Arial,sans-serif;color:var(--muted)}
+.interests-gallery>.interests-image-note{font:400 .75rem/1.6 Arial,sans-serif;color:var(--muted);margin:15px 0 0}
+@media(max-width:900px){.interests-cards{gap:16px}.interest-card img{height:200px}.interest-card figcaption{padding:17px}}
+@media(max-width:700px){.interests.interests-gallery{padding-top:28px}.interests-gallery>h3{font-size:1.85rem;margin-bottom:22px}.interests-cards{grid-template-columns:1fr;gap:20px}.interest-card img{height:190px}.interest-card figcaption{padding:18px}}
+@media print{.interests-cards{display:block}.interest-card{border:0;display:inline-block;margin-right:20px}.interest-card>a,.interests-image-note{display:none}.interest-card figcaption{padding:0;color:#14213a;font-size:10pt}.interests-gallery>h3{font-size:18pt;color:#14213a}}
